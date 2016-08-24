@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	* {
+  box-sizing: border-box;
+}
+body
+{
+  font-size: 3.5vmin;
+  	
+	background-repeat:repeat-y;
+  <!-- background-color: #cccccc;-->
+	background-size:cover;
+}
+th {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+tr:nth-child(odd) {
+    background: #e5ffe5;
+}
+#myInput0,#myInput1,#myInput2 {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 30%;
+  padding:10px;
+  font-size: 2.5vmin;
+  border: 1px solid #ddd;
+  margin-bottom: 2.5vmin;
+  align-content:center;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 2.5vmin;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 2.5vmin;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+#d placeholder,#d title
+{
+	font-size:2.5vmin;
+}
+#g
+{
+	font-size:3.5vmin;
+}
+#f
+{
+	font-family:myfav;
+}
+@font-face
+{
+	font-family: myfav;
+}
+</style>
+</head>
+<body>
+	<h1><a href="http://www.cbit.ac.in"><input type='image' align='left' src="11.png" height=auto width=9%></a></h1>
+	<h1><a href="http://www.cbit.ac.in"><input type='image' align='right' src="cosc.png" height=auto width=13%></a></h1>
+	<div id='g'><div id='f'><h1 align='center'>CBIT TRANSPORT</h1></div></div>
+<div id='d'>
+	<br/>
+	<center>
+	<input type="text" id="myInput0" onkeyup="myFunction0()" placeholder="Search Bus Number.." title="Type in a Bus Number">
+	<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search Bus Stop.." title="Type in a Bus Stop">    
+    <input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search Bus Time.." title="Type in a Time">
+</center>
+</div>
+<table id="myTable">
+  <tr class="header">
+    <th align='left' style="width:60%;">Bus No</th>
+    <th align='center' style="width:40%;">Route Name</th>
+		<th style="width:40%;">Time</th>
+ <tr><td>19</td><td>Uppal x Roads</td><td>7.40AM</td></tr>
+ <tr><td>19</td><td>Survey of India</td><td>7.43</td></tr>
+ <tr><td>19</td><td>Habsiguda St 8</td><td>7.46</td></tr>
+ <tr><td>19</td><td>Ramanthapur</td><td>7.55</td></tr>
+ <tr><td>19</td><td>Amberpet</td><td>8.03</td></tr>
+ <tr><td>19</td><td>6 no. Junction</td><td>8.06</td></tr>
+ <tr><td>19</td><td>Syndicate bank</td><td>8.08</td></tr>
+ <tr><td>19</td><td>Vidyanagar (SVES)</td><td>8.10</td></tr>
+ <tr><td>19</td><td>Nallakunta</td><td>8.13</td></tr>
+ <tr><td>19</td><td>Fever hospital</td><td>8.15</td></tr>
+ <tr><td>19</td><td>Barkatpura</td><td>8.17</td></tr>
+ <tr><td>19</td><td>Narayanguda</td><td>8.21</td></tr>
+ <tr><td>19</td><td>Himayath nagar</td><td>8.25</td></tr>
+ <tr><td>19</td><td>Lakdi ka pool</td><td>8.30</td></tr>
+ <tr><td>19</td><td>Masab Tank</td><td>8.34</td></tr>
+ <tr><td>19</td><td>NMDC</td><td>8.37</td></tr>
+ <tr><td>19</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>19</td><td>Kakatiya Nagar</td><td>8.48</td></tr>
+ <tr><td>28</td><td>Sangeet</td><td>7.35AM</td></tr>
+ <tr><td>28</td><td>Patny</td><td>8.00 AM</td></tr>
+ <tr><td>28</td><td>Paradise</td><td>8.05</td></tr>
+ <tr><td>28</td><td>Airport</td><td>8.10</td></tr>
+ <tr><td>28</td><td>HPS</td><td>8.16</td></tr>
+ <tr><td>28</td><td>Life style</td><td>8.18</td></tr>
+ <tr><td>28</td><td>JVR park</td><td>8.20</td></tr>
+ <tr><td>28</td><td>Care hospital</td><td>8.22</td></tr>
+ <tr><td>28</td><td>Mehdipatnam</td><td>8.27</td></tr>
+ <tr><td>28</td><td>Tolichowki</td><td>8.40</td></tr>
+ <tr><td>28</td><td>Tolichowki cross road</td><td>8.47</td></tr>
+ <tr><td>28</td><td>Narayanamma college</td><td>8.50</td></tr>
+ <tr><td>28</td><td>Dargah</td><td>9.00</td></tr>
+ <tr><td>28</td><td>Delhi Public School</td><td>9.05</td></tr>
+ <tr><td>44</td><td>Alakapuri</td><td>8.10AM</td></tr>
+ <tr><td>44</td><td>L.B. Nagar</td><td>8.15</td></tr>
+ <tr><td>44</td><td>Sagar Ring Road</td><td>8.20</td></tr>
+ <tr><td>44</td><td>Gayathri Nagar</td><td>8.25</td></tr>
+ <tr><td>44</td><td>Manda mallamma fn hall</td><td>8.30</td></tr>
+ <tr><td>44</td><td>Owaisi Hospital</td><td>8.35</td></tr>
+ <tr><td>44</td><td>DRDL</td><td>8.40</td></tr>
+ <tr><td>44</td><td>Chandrayangutta</td><td>8.45</td></tr>
+ <tr><td>44</td><td>Aramghar ring road</td><td>8.55</td></tr>
+ <tr><td>45</td><td>Sagar X Roads</td><td>8.10 AM</td></tr>
+ <tr><td>45</td><td>Champapet</td><td>8.25</td></tr>
+ <tr><td>45</td><td>Santhosh Nagar</td><td>8.28</td></tr>
+ <tr><td>45</td><td>DRDL</td><td>8.33</td></tr>
+ <tr><td>45</td><td>Chandrayangutta</td><td>8.42</td></tr>
+ <tr><td>45</td><td>Aramghar ring road</td><td>8.50</td></tr>
+ <tr><td>45</td><td>Attapur</td><td>9.00</td></tr>
+ <tr><td>45</td><td>Hyderguda</td><td>9.05</td></tr>
+ <tr><td>45</td><td>Langarhouse</td><td>9.10</td></tr>
+ <tr><td>45</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>46</td><td>Panama</td><td>8.05AM</td></tr>
+ <tr><td>46</td><td>Chinthalkunta</td><td>8.10</td></tr>
+ <tr><td>46</td><td>Sagar Ring Road</td><td>8.20</td></tr>
+ <tr><td>46</td><td>Champapet</td><td>8.25</td></tr>
+ <tr><td>46</td><td>Owaisi Hospital</td><td>8.35</td></tr>
+ <tr><td>46</td><td>DRDL</td><td>8.40</td></tr>
+ <tr><td>46</td><td>Chandrayangutta</td><td>8.45</td></tr>
+ <tr><td>46</td><td>Aramghar ring road</td><td>8.55</td></tr>
+ <tr><td>46</td><td>Rajendra Nagar</td><td>9.00</td></tr>
+ <tr><td>46</td><td>Appa Junction</td><td>9.10</td></tr>
+ <tr><td>46</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>48</td><td>NGOs Colony</td><td>7.45AM</td></tr>
+ <tr><td>48</td><td>BN Reddy Nagar</td><td>7.50</td></tr>
+ <tr><td>48</td><td>Hasmathpet</td><td>7.53</td></tr>
+ <tr><td>48</td><td>Sagar Ring Road</td><td>8.00</td></tr>
+ <tr><td>48</td><td>Biramalguda</td><td>8.05</td></tr>
+ <tr><td>48</td><td>Kharmanghat</td><td>8.10</td></tr>
+ <tr><td>48</td><td>IS Sadan</td><td>8.25</td></tr>
+ <tr><td>48</td><td>Santhosh Nagar</td><td>8.28</td></tr>
+ <tr><td>48</td><td>DRDL</td><td>8.33</td></tr>
+ <tr><td>48</td><td>Chandrayangutta</td><td>8.42</td></tr>
+ <tr><td>48</td><td>Aramghar ring road</td><td>8.50</td></tr>
+ <tr><td>48</td><td>Attapur</td><td>9.00</td></tr>
+ <tr><td>48</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>34</td><td>L.B. Nagar</td><td>7.45AM</td></tr>
+ <tr><td>34</td><td>Astalaxmi Temple</td><td>7.49</td></tr>
+ <tr><td>34</td><td>Kothapet fruit market</td><td>7.52</td></tr>
+ <tr><td>34</td><td>Chaitanyapuri</td><td>7.56</td></tr>
+ <tr><td>34</td><td>Dilsukh Nagar</td><td>8.00</td></tr>
+ <tr><td>34</td><td>Moosarambagh</td><td>8.03</td></tr>
+ <tr><td>34</td><td>Malakpet</td><td>8.05</td></tr>
+ <tr><td>34</td><td>Nalgonda x roads</td><td>8.08</td></tr>
+ <tr><td>34</td><td>Chaderghat</td><td>8.10</td></tr>
+ <tr><td>34</td><td>Koti</td><td>8.13</td></tr>
+ <tr><td>34</td><td>Abids</td><td>8.23</td></tr>
+ <tr><td>34</td><td>Lakdi - ka - pool</td><td>8.26</td></tr>
+ <tr><td>34</td><td>NMDC</td><td>8.35</td></tr>
+ <tr><td>34</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>34</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>26</td><td>Kompally</td><td>7.45AM</td></tr>
+ <tr><td>26</td><td>Bowenpally</td><td>7.55</td></tr>
+ <tr><td>26</td><td>Sowjanya colony</td><td>7.57</td></tr>
+ <tr><td>26</td><td>Ashok gardens</td><td>8.00</td></tr>
+ <tr><td>26</td><td>Tadbund</td><td>8.04</td></tr>
+ <tr><td>26</td><td>Paradise</td><td>8.10</td></tr>
+ <tr><td>26</td><td>Airport</td><td>8.16</td></tr>
+ <tr><td>26</td><td>HPS</td><td>8.18</td></tr>
+ <tr><td>26</td><td>Life style</td><td>8.20</td></tr>
+ <tr><td>26</td><td>JVR park</td><td>8.22</td></tr>
+ <tr><td>26</td><td>Care hospital</td><td>8.27</td></tr>
+ <tr><td>26</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>26</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>&nbsp;</td><td>ICRISAT</td><td>8.20AM</td></tr>
+ <tr><td>&nbsp;</td><td>Beeramguda</td><td>8.25</td></tr>
+ <tr><td>&nbsp;</td><td>Lingampally</td><td>8.30</td></tr>
+ <tr><td>&nbsp;</td><td>Railway Gate</td><td>8.38</td></tr>
+ <tr><td>&nbsp;</td><td>Gulmohar Park</td><td>8.41</td></tr>
+ <tr><td>&nbsp;</td><td>HCU</td><td>8.45</td></tr>
+ <tr><td>&nbsp;</td><td>Indira Nagar</td><td>8.55</td></tr>
+ <tr><td>&nbsp;</td><td>Gachibowli stadium</td><td>9.05</td></tr>
+ <tr><td>&nbsp;</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>62</td><td>KP Y Junction</td><td>8.05</td></tr>
+ <tr><td>62</td><td>KPHB</td><td>8.12</td></tr>
+ <tr><td>62</td><td>JNTU</td><td>8.20</td></tr>
+ <tr><td>62</td><td>Nizampet</td><td>8.15</td></tr>
+ <tr><td>62</td><td>Hydernagar</td><td>8.20</td></tr>
+ <tr><td>62</td><td>Miyapur</td><td>8.25</td></tr>
+ <tr><td>62</td><td>Huda Colony</td><td>8.30</td></tr>
+ <tr><td>62</td><td>Madina Guda</td><td>8.32</td></tr>
+ <tr><td>62</td><td>Chanda Nagar</td><td>8.35</td></tr>
+ <tr><td>62</td><td>Lingampally</td><td>8.45</td></tr>
+ <tr><td>62</td><td>Railway Gate</td><td>8.48</td></tr>
+ <tr><td>62</td><td>Gulmohar Park</td><td>8.51</td></tr>
+ <tr><td>62</td><td>HCU</td><td>8.55</td></tr>
+ <tr><td>62</td><td>Indira Nagar</td><td>9.00</td></tr>
+ <tr><td>62</td><td>Gachibowli stadium</td><td>9.05</td></tr>
+ <tr><td>62</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>64</td><td>Pragathi Nagar</td><td>7.50AM</td></tr>
+ <tr><td>64</td><td>JNTU</td><td>8.10</td></tr>
+ <tr><td>64</td><td>Nizampet</td><td>8.15</td></tr>
+ <tr><td>64</td><td>Hydernagar</td><td>8.20</td></tr>
+ <tr><td>64</td><td>Miyapur</td><td>8.25</td></tr>
+ <tr><td>64</td><td>Hafeez pet</td><td>8.42</td></tr>
+ <tr><td>64</td><td>Kondapur</td><td>8.50</td></tr>
+ <tr><td>64</td><td>Kondapur</td><td>8.53</td></tr>
+ <tr><td>64</td><td>Kothaguda X roads</td><td>8.56</td></tr>
+ <tr><td>64</td><td>Gachibowli</td><td>9.00</td></tr>
+ <tr><td>66</td><td>Jeedimetla</td><td>7.40AM</td></tr>
+ <tr><td>66</td><td>Chinthal</td><td>7.45</td></tr>
+ <tr><td>66</td><td>IDPL</td><td>7.55</td></tr>
+ <tr><td>66</td><td>KP Y Junction</td><td>8.05</td></tr>
+ <tr><td>66</td><td>KPHB</td><td>8.12</td></tr>
+ <tr><td>66</td><td>JNTU</td><td>8.20</td></tr>
+ <tr><td>66</td><td>Nizampet</td><td>8.25</td></tr>
+ <tr><td>66</td><td>Hydernagar</td><td>8.28</td></tr>
+ <tr><td>66</td><td>Hafeez pet</td><td>8.42</td></tr>
+ <tr><td>66</td><td>Kondapur</td><td>8.50</td></tr>
+ <tr><td>66</td><td>Kondapur</td><td>8.53</td></tr>
+ <tr><td>66</td><td>Kothaguda X roads</td><td>8.56</td></tr>
+ <tr><td>66</td><td>Gachibowli</td><td>9.00</td></tr>
+ <tr><td>29</td><td>Officers colony</td><td>7.35AM</td></tr>
+ <tr><td>29</td><td>Sainikpuri x Road</td><td>7.39</td></tr>
+ <tr><td>29</td><td>Neredmet x Road</td><td>7.42</td></tr>
+ <tr><td>29</td><td>Vinayak Nagar</td><td>7.46</td></tr>
+ <tr><td>29</td><td>Krupa Complex</td><td>7.48</td></tr>
+ <tr><td>29</td><td>Safilguda  x roads</td><td>7.50</td></tr>
+ <tr><td>29</td><td>Anandbagh</td><td>7.52</td></tr>
+ <tr><td>29</td><td>Anutex -Malkajgiri</td><td>7.55</td></tr>
+ <tr><td>29</td><td>Sai Ram Theatre</td><td>7.58</td></tr>
+ <tr><td>29</td><td>Mettuguda</td><td>8.01</td></tr>
+ <tr><td>29</td><td>Chilakalaguda</td><td>8.08</td></tr>
+ <tr><td>29</td><td>Musheerabad</td><td>8.15</td></tr>
+ <tr><td>29</td><td>Kavadiguda</td><td>8.20</td></tr>
+ <tr><td>29</td><td>Mehidipatnam</td><td>8.25</td></tr>
+ <tr><td>29</td><td>L B Nagar</td><td>9.25</td></tr>
+ <tr><td>39</td><td>Astalakshmi Temple</td><td>7.40AM</td></tr>
+ <tr><td>39</td><td>Kothapet Fruit Market</td><td>7.46</td></tr>
+ <tr><td>39</td><td>Chaitanyapuri</td><td>7.52</td></tr>
+ <tr><td>39</td><td>Dilsukh Nagar</td><td>7.56</td></tr>
+ <tr><td>39</td><td>Moosarambagh</td><td>8.00</td></tr>
+ <tr><td>39</td><td>Malakpet</td><td>8.03</td></tr>
+ <tr><td>39</td><td>Nalgonda x Roads</td><td>8.05</td></tr>
+ <tr><td>39</td><td>Chaderghat</td><td>8.08</td></tr>
+ <tr><td>39</td><td>Koti</td><td>8.10</td></tr>
+ <tr><td>39</td><td>Nampally/Abids</td><td>8.13</td></tr>
+ <tr><td>39</td><td>Lakdi - Ka - Pool</td><td>8.23</td></tr>
+ <tr><td>39</td><td>N M D C</td><td>8.26</td></tr>
+ <tr><td>39</td><td>Mehdipatnam</td><td>8.35</td></tr>
+ <tr><td>69</td><td>Kukatpally Y Junction</td><td>7.50AM</td></tr>
+ <tr><td>69</td><td>Kukatpally</td><td>7.55</td></tr>
+ <tr><td>69</td><td>KPHB</td><td>8.00</td></tr>
+ <tr><td>69</td><td>JNTU</td><td>8.10</td></tr>
+ <tr><td>69</td><td>Nizampet</td><td>8.15</td></tr>
+ <tr><td>69</td><td>Hydernagar</td><td>8.20</td></tr>
+ <tr><td>69</td><td>Miyapur</td><td>8.25</td></tr>
+ <tr><td>69</td><td>Huda Colony</td><td>8.30</td></tr>
+ <tr><td>69</td><td>Madina Guda</td><td>8.32</td></tr>
+ <tr><td>69</td><td>Chanda Nagar</td><td>8.35</td></tr>
+ <tr><td>69</td><td>Lingampally</td><td>8.45</td></tr>
+ <tr><td>69</td><td>Railway Gate</td><td>8.48</td></tr>
+ <tr><td>69</td><td>Gulmohar Park</td><td>8.51</td></tr>
+ <tr><td>69</td><td>HCU</td><td>8.55</td></tr>
+ <tr><td>69</td><td>Indira Nagar</td><td>9.00</td></tr>
+ <tr><td>69</td><td>Gachibowli stadium</td><td>9.05</td></tr>
+ <tr><td>69</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>16</td><td>T V Studio</td><td>7.55 AM</td></tr>
+ <tr><td>16</td><td>Amberpet</td><td>8.00</td></tr>
+ <tr><td>16</td><td>Amberpet</td><td>8.02</td></tr>
+ <tr><td>16</td><td>6 no. Junction</td><td>8.03</td></tr>
+ <tr><td>16</td><td>Tilak Nagar</td><td>8.08</td></tr>
+ <tr><td>16</td><td>Fever hospital</td><td>8.12</td></tr>
+ <tr><td>16</td><td>Barkatpura</td><td>8.17</td></tr>
+ <tr><td>16</td><td>Narayanguda</td><td>8.21</td></tr>
+ <tr><td>16</td><td>Himayath nagar</td><td>8.26</td></tr>
+ <tr><td>16</td><td>Lakdi ka pool</td><td>8.30</td></tr>
+ <tr><td>16</td><td>Masab Tank</td><td>8.33</td></tr>
+ <tr><td>16</td><td>NMDC</td><td>8.37</td></tr>
+ <tr><td>16</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>16</td><td>Kakatiya Nagar</td><td>8.45</td></tr>
+ <tr><td>17</td><td>Z T S</td><td>7.40AM</td></tr>
+ <tr><td>17</td><td>Lalapet</td><td>7.50</td></tr>
+ <tr><td>17</td><td>Tarnaka</td><td>8.00</td></tr>
+ <tr><td>17</td><td>Padma Rao Nagar</td><td>8.15</td></tr>
+ <tr><td>17</td><td>Musheerabad x road</td><td>8.20</td></tr>
+ <tr><td>17</td><td>Golconda x road</td><td>8.23</td></tr>
+ <tr><td>17</td><td>RTC x Road</td><td>8.25</td></tr>
+ <tr><td>17</td><td>Ashok Nagar</td><td>8.27</td></tr>
+ <tr><td>17</td><td>Indira Park</td><td>8.28</td></tr>
+ <tr><td>17</td><td>Lakdi-ka-pool</td><td>8.33</td></tr>
+ <tr><td>17</td><td>N M D C</td><td>8.38</td></tr>
+ <tr><td>17</td><td>Mehidipatnam</td><td>8.43</td></tr>
+ <tr><td>17</td><td>Jyothi Nagar/Ring Road</td><td>8.48</td></tr>
+ <tr><td>17</td><td>Langar House</td><td>8.55</td></tr>
+ <tr><td>17</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>18</td><td>ECIL x roads</td><td>7.40AM</td></tr>
+ <tr><td>18</td><td>H B Colony</td><td>7.45</td></tr>
+ <tr><td>18</td><td>NFC</td><td>7.50</td></tr>
+ <tr><td>18</td><td>Mallapur</td><td>7.53</td></tr>
+ <tr><td>18</td><td>Nacharam</td><td>8.00</td></tr>
+ <tr><td>18</td><td>HMT nagar</td><td>8.02</td></tr>
+ <tr><td>18</td><td>Habsiguda</td><td>8.05</td></tr>
+ <tr><td>18</td><td>Tarnaka x roads</td><td>8.08</td></tr>
+ <tr><td>18</td><td>Chilakalaguda</td><td>8.15</td></tr>
+ <tr><td>18</td><td>Musheerabad</td><td>8.20</td></tr>
+ <tr><td>18</td><td>Kavadiguda</td><td>8.25</td></tr>
+ <tr><td>18</td><td>Mehidipatnam</td><td>8.40</td></tr>
+ <tr><td>&nbsp;</td><td>Radhika (ECIL)</td><td>7.35AM</td></tr>
+ <tr><td>&nbsp;</td><td>Officers colony</td><td>7.39</td></tr>
+ <tr><td>&nbsp;</td><td>Sainikpuri x Road</td><td>7.42</td></tr>
+ <tr><td>&nbsp;</td><td>Neredmet x Road</td><td>7.46</td></tr>
+ <tr><td>&nbsp;</td><td>Vinayak Nagar</td><td>7.48</td></tr>
+ <tr><td>&nbsp;</td><td>Krupa Complex</td><td>7.50</td></tr>
+ <tr><td>&nbsp;</td><td>Safilguda  x roads</td><td>7.52</td></tr>
+ <tr><td>&nbsp;</td><td>Anandbagh</td><td>7.55</td></tr>
+ <tr><td>&nbsp;</td><td>Anutex -Malkajgiri</td><td>7.58</td></tr>
+ <tr><td>&nbsp;</td><td>Sai Ram Theatre</td><td>8.01</td></tr>
+ <tr><td>&nbsp;</td><td>Mettuguda</td><td>8.08</td></tr>
+ <tr><td>&nbsp;</td><td>Chilakalaguda</td><td>8.15</td></tr>
+ <tr><td>&nbsp;</td><td>Musheerabad</td><td>8.20</td></tr>
+ <tr><td>&nbsp;</td><td>Kavadiguda</td><td>8.25</td></tr>
+ <tr><td>&nbsp;</td><td>Mehidipatnam</td><td>8.40</td></tr>
+ <tr><td>22</td><td>Radhika (ECIL)</td><td>7.35AM</td></tr>
+ <tr><td>22</td><td>Officers colony</td><td>7.39</td></tr>
+ <tr><td>22</td><td>Sainikpuri x road</td><td>7.42</td></tr>
+ <tr><td>22</td><td>Neredmet x road</td><td>7.50</td></tr>
+ <tr><td>22</td><td>Maredpally</td><td>8.05</td></tr>
+ <tr><td>22</td><td>Maredpally</td><td>8.08</td></tr>
+ <tr><td>22</td><td>Sangeeth</td><td>8.10</td></tr>
+ <tr><td>22</td><td>Patny</td><td>8.12</td></tr>
+ <tr><td>22</td><td>Pizza Hut</td><td>8.16</td></tr>
+ <tr><td>22</td><td>HPS</td><td>8.19</td></tr>
+ <tr><td>22</td><td>Life Style</td><td>8.22</td></tr>
+ <tr><td>22</td><td>Care hospital</td><td>8.32</td></tr>
+ <tr><td>22</td><td>Mehdipatnam</td><td>8.45</td></tr>
+ <tr><td>24</td><td>Alwal</td><td>7.40AM</td></tr>
+ <tr><td>24</td><td>Lothukunta</td><td>7.45</td></tr>
+ <tr><td>24</td><td>Lalbazar</td><td>7.50</td></tr>
+ <tr><td>24</td><td>Thirumalgherry</td><td>7.55</td></tr>
+ <tr><td>24</td><td>Kharkhana</td><td>8.00</td></tr>
+ <tr><td>24</td><td>Vikrampuri</td><td>8.03</td></tr>
+ <tr><td>24</td><td>JBS</td><td>8.07</td></tr>
+ <tr><td>24</td><td>Patny</td><td>8.10</td></tr>
+ <tr><td>24</td><td>Pizza hut</td><td>8.13</td></tr>
+ <tr><td>24</td><td>Airport</td><td>8.16</td></tr>
+ <tr><td>24</td><td>HPS</td><td>8.18</td></tr>
+ <tr><td>24</td><td>Life style</td><td>8.20</td></tr>
+ <tr><td>24</td><td>JVR park</td><td>8.22</td></tr>
+ <tr><td>24</td><td>Care hospital</td><td>8.27</td></tr>
+ <tr><td>24</td><td>Pension Office</td><td>8.32</td></tr>
+ <tr><td>24</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>25</td><td>JBS</td><td>8.05 AM</td></tr>
+ <tr><td>25</td><td>Patny</td><td>8.10</td></tr>
+ <tr><td>25</td><td>Pizza hut</td><td>8.13</td></tr>
+ <tr><td>25</td><td>Airport</td><td>8.16</td></tr>
+ <tr><td>25</td><td>HPS</td><td>8.18</td></tr>
+ <tr><td>25</td><td>Life style</td><td>8.20</td></tr>
+ <tr><td>25</td><td>JVR park</td><td>8.22</td></tr>
+ <tr><td>25</td><td>Care hospital</td><td>8.27</td></tr>
+ <tr><td>25</td><td>Pension Office</td><td>8.32</td></tr>
+ <tr><td>25</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>&nbsp;</td><td>Gokul Theatre</td><td>8.10AM</td></tr>
+ <tr><td>&nbsp;</td><td>ESI</td><td>8.12</td></tr>
+ <tr><td>&nbsp;</td><td>S R Nagar</td><td>8.14</td></tr>
+ <tr><td>&nbsp;</td><td>HUDA Maitrivanam</td><td>8.16</td></tr>
+ <tr><td>&nbsp;</td><td>Ameerpet</td><td>8.20</td></tr>
+ <tr><td>&nbsp;</td><td>Punjagutta central</td><td>8.25</td></tr>
+ <tr><td>&nbsp;</td><td>Erramanzil</td><td>8.28</td></tr>
+ <tr><td>&nbsp;</td><td>Taj Krishna</td><td>8.30</td></tr>
+ <tr><td>&nbsp;</td><td>Care hospital</td><td>8.32</td></tr>
+ <tr><td>&nbsp;</td><td>Pension office</td><td>8.34</td></tr>
+ <tr><td>&nbsp;</td><td>Masab tank</td><td>8.37</td></tr>
+ <tr><td>&nbsp;</td><td>Mehidipatnam</td><td>8.44</td></tr>
+ <tr><td>&nbsp;</td><td>Nanal nagar</td><td>8.50</td></tr>
+ <tr><td>&nbsp;</td><td>Tolichowki</td><td>8.53</td></tr>
+ <tr><td>&nbsp;</td><td>Reliance super market</td><td>8.58</td></tr>
+ <tr><td>&nbsp;</td><td>Narayanamma college</td><td>9.00</td></tr>
+ <tr><td>&nbsp;</td><td>Dargah</td><td>9.05</td></tr>
+ <tr><td>&nbsp;</td><td>Delhi Public School</td><td>9.10</td></tr>
+ <tr><td>52</td><td>Gokul Theatre</td><td>8.10AM</td></tr>
+ <tr><td>52</td><td>ESI</td><td>8.12</td></tr>
+ <tr><td>52</td><td>Maitrivanam</td><td>8.15</td></tr>
+ <tr><td>52</td><td>Yousufguda</td><td>8.23</td></tr>
+ <tr><td>52</td><td>Yousufguda Basti</td><td>8.25</td></tr>
+ <tr><td>52</td><td>Ratnadeep</td><td>8.30</td></tr>
+ <tr><td>52</td><td>TV9</td><td>8.33</td></tr>
+ <tr><td>52</td><td>Annapoorna studio</td><td>8.35</td></tr>
+ <tr><td>52</td><td>LVP Eye Hospital</td><td>8.37</td></tr>
+ <tr><td>52</td><td>BVBPS cancer hospital</td><td>8.41</td></tr>
+ <tr><td>52</td><td>Film Nagar</td><td>8.45</td></tr>
+ <tr><td>52</td><td>Dargah</td><td>8.55</td></tr>
+ <tr><td>52</td><td>Khajaguda</td><td>9.00</td></tr>
+ <tr><td>52</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>54</td><td>P R Nagar</td><td>8.05AM</td></tr>
+ <tr><td>54</td><td>Moti nagar</td><td>8.10</td></tr>
+ <tr><td>54</td><td>Yousufguda</td><td>8.20</td></tr>
+ <tr><td>54</td><td>Jubilee check post</td><td>8.30</td></tr>
+ <tr><td>54</td><td>Peddamma temple</td><td>8.35</td></tr>
+ <tr><td>54</td><td>Madhapur</td><td>8.40</td></tr>
+ <tr><td>54</td><td>Hi-tech city</td><td>8.47</td></tr>
+ <tr><td>54</td><td>Kothaguda x roads</td><td>8.57</td></tr>
+ <tr><td>54</td><td>Gachibowli</td><td>9.00</td></tr>
+ <tr><td>68</td><td>Bowenpally</td><td>7.45AM</td></tr>
+ <tr><td>68</td><td>Ferozguda</td><td>7.50</td></tr>
+ <tr><td>68</td><td>Balanagar</td><td>7.53</td></tr>
+ <tr><td>68</td><td>Shobhana</td><td>7.57</td></tr>
+ <tr><td>68</td><td>Narsapur x cross road</td><td>8.00</td></tr>
+ <tr><td>68</td><td>KP Y junction</td><td>8.05</td></tr>
+ <tr><td>68</td><td>Kukatpally</td><td>8.08</td></tr>
+ <tr><td>68</td><td>Vivekandanagar</td><td>8.10</td></tr>
+ <tr><td>68</td><td>KPHB</td><td>8.12</td></tr>
+ <tr><td>68</td><td>JNTU</td><td>8.20</td></tr>
+ <tr><td>68</td><td>Malaysian town ship</td><td>8.25</td></tr>
+ <tr><td>68</td><td>Hitech city</td><td>8.35</td></tr>
+ <tr><td>68</td><td>Kothaguda x road</td><td>8.45</td></tr>
+ <tr><td>68</td><td>ORR junction</td><td>8.55</td></tr>
+ <tr><td>68</td><td>CBIT</td><td>9.25</td></tr>
+ <tr><td>90</td><td>Mehdipatnam/Jaya residency</td><td>8.45AM</td></tr>
+ <tr><td>90</td><td>Nanal Nagar</td><td>8.50</td></tr>
+ <tr><td>92</td><td>Mehdipatnam/Jaya residency</td><td>8.45AM</td></tr>
+ <tr><td>92</td><td>Nanal Nagar</td><td>8.50</td></tr>
+ <tr><td>94</td><td>Mehdipatnam/Jaya residency</td><td>8.45AM</td></tr>
+ <tr><td>94</td><td>Nanal Nagar</td><td>8.50</td></tr>
+ <tr><td>99</td><td>Mehdipatnam/Jaya residency</td><td>8.45AM</td></tr>
+ <tr><td>99</td><td>Nanal Nagar</td><td>8.50</td></tr>
+ <tr><td>49</td><td>L.B.Nagar</td><td>7.55 AM</td></tr>
+ <tr><td>49</td><td>Sagar Ring Road</td><td>8.00</td></tr>
+ <tr><td>49</td><td>Biramalguda</td><td>8.05</td></tr>
+ <tr><td>49</td><td>Kharmanghat</td><td>8.10</td></tr>
+ <tr><td>49</td><td>Green park colony</td><td>8.18</td></tr>
+ <tr><td>49</td><td>Champapet</td><td>8.20</td></tr>
+ <tr><td>49</td><td>IS Sadan</td><td>8.25</td></tr>
+ <tr><td>49</td><td>Santhosh Nagar</td><td>8.28</td></tr>
+ <tr><td>49</td><td>DRDL</td><td>8.33</td></tr>
+ <tr><td>49</td><td>Chandrayangutta</td><td>8.42</td></tr>
+ <tr><td>49</td><td>Aramghar ring road</td><td>08:50:00</td></tr>
+ <tr><td>49</td><td>Attapur</td><td>&nbsp;</td></tr>
+ <tr><td>59</td><td>Erragadda</td><td>7.50AM</td></tr>
+ <tr><td>59</td><td>ESI</td><td>7.52</td></tr>
+ <tr><td>59</td><td>S R Nagar</td><td>7.55</td></tr>
+ <tr><td>59</td><td>Maitrivanam</td><td>7.58</td></tr>
+ <tr><td>59</td><td>Yousufguda</td><td>8.05</td></tr>
+ <tr><td>59</td><td>Yousufguda Basti</td><td>8.10</td></tr>
+ <tr><td>59</td><td>Ratnadeep</td><td>8.15</td></tr>
+ <tr><td>59</td><td>TV9</td><td>8.18</td></tr>
+ <tr><td>59</td><td>Annapoorna studio</td><td>8.21</td></tr>
+ <tr><td>59</td><td>LVP Eye Hospital</td><td>8.23</td></tr>
+ <tr><td>59</td><td>Jubilee Check Post</td><td>8.27</td></tr>
+ <tr><td>59</td><td>Peddamma Temple</td><td>8.35</td></tr>
+ <tr><td>59</td><td>Madhapur</td><td>8.40</td></tr>
+ <tr><td>59</td><td>Hi-tech city</td><td>8.47</td></tr>
+ <tr><td>73</td><td>Kothaguda x roads</td><td>8.57</td></tr>
+ <tr><td>74</td><td>Gachibowli</td><td>9.00</td></tr>
+ <tr><td>10</td><td>Ramanthapur Public School</td><td>7.45AM</td></tr>
+ <tr><td>10</td><td>T V Studio</td><td>7.57</td></tr>
+ <tr><td>10</td><td>Amberpet</td><td>8.00</td></tr>
+ <tr><td>10</td><td>Amberpet</td><td>8.02</td></tr>
+ <tr><td>10</td><td>6 no. Junction</td><td>8.03</td></tr>
+ <tr><td>10</td><td>Syndicate bank</td><td>8.06</td></tr>
+ <tr><td>10</td><td>NCC airtel</td><td>8.08</td></tr>
+ <tr><td>10</td><td>SVE School</td><td>8.10</td></tr>
+ <tr><td>10</td><td>Vidya Nagar</td><td>8.11</td></tr>
+ <tr><td>10</td><td>VST</td><td>8.12</td></tr>
+ <tr><td>10</td><td>RTC x roads</td><td>8.15</td></tr>
+ <tr><td>10</td><td>Gandhi nagar</td><td>8.17</td></tr>
+ <tr><td>10</td><td>Ashok nagar</td><td>8.20</td></tr>
+ <tr><td>10</td><td>Indira park</td><td>8.25</td></tr>
+ <tr><td>10</td><td>Lakdi-ka-pool</td><td>8.30</td></tr>
+ <tr><td>10</td><td>NMDC</td><td>8.35</td></tr>
+ <tr><td>10</td><td>Mehidipatnam</td><td>8.40</td></tr>
+ <tr><td>10</td><td>Tolichowki</td><td>8.45</td></tr>
+ <tr><td>10</td><td>Dargah</td><td>9.00</td></tr>
+ <tr><td>11</td><td>Uppal x roads</td><td>7.55AM</td></tr>
+ <tr><td>11</td><td>Survey of India</td><td>7.57</td></tr>
+ <tr><td>11</td><td>Habsiguda</td><td>8.00</td></tr>
+ <tr><td>11</td><td>Tarnaka x roads</td><td>8.03</td></tr>
+ <tr><td>11</td><td>Vidyanagar (SVES)</td><td>8.08</td></tr>
+ <tr><td>11</td><td>Nallakunta</td><td>8.13</td></tr>
+ <tr><td>11</td><td>Fever hospital</td><td>8.15</td></tr>
+ <tr><td>11</td><td>Barkatpura</td><td>8.17</td></tr>
+ <tr><td>11</td><td>Narayanguda</td><td>8.21</td></tr>
+ <tr><td>11</td><td>Himayath nagar</td><td>8.26</td></tr>
+ <tr><td>11</td><td>Lakdi ka pool</td><td>8.30</td></tr>
+ <tr><td>11</td><td>Masab Tank</td><td>8.33</td></tr>
+ <tr><td>11</td><td>NMDC</td><td>8.37</td></tr>
+ <tr><td>11</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>11</td><td>Kakatiya Nagar</td><td>8.45</td></tr>
+ <tr><td>46</td><td>Panama</td><td>8.05AM</td></tr>
+ <tr><td>46</td><td>Chinthalkunta</td><td>8.10</td></tr>
+ <tr><td>46</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>46</td><td>Sagar Ring Road</td><td>8.20</td></tr>
+ <tr><td>46</td><td>Champapet</td><td>8.25</td></tr>
+ <tr><td>46</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>46</td><td>Owaisi Hospital</td><td>8.35</td></tr>
+ <tr><td>46</td><td>DRDL</td><td>8.40</td></tr>
+ <tr><td>46</td><td>Chandrayangutta</td><td>8.45</td></tr>
+ <tr><td>46</td><td>Aramghar ring road</td><td>8.55</td></tr>
+ <tr><td>46</td><td>Rajendra Nagar</td><td>9.00</td></tr>
+ <tr><td>46</td><td>Appa Junction</td><td>9.10</td></tr>
+ <tr><td>48</td><td>NGOs Colony</td><td>7.45AM</td></tr>
+ <tr><td>48</td><td>BN Reddy Nagar</td><td>7.50</td></tr>
+ <tr><td>48</td><td>Hasmathpet</td><td>7.53</td></tr>
+ <tr><td>48</td><td>Sagar Ring Road</td><td>8.00</td></tr>
+ <tr><td>48</td><td>Biramalguda</td><td>8.05</td></tr>
+ <tr><td>48</td><td>Kharmanghat</td><td>8.10</td></tr>
+ <tr><td>48</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>48</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>48</td><td>IS Sadan</td><td>8.25</td></tr>
+ <tr><td>48</td><td>Santhosh Nagar</td><td>8.28</td></tr>
+ <tr><td>48</td><td>DRDL</td><td>8.33</td></tr>
+ <tr><td>48</td><td>Chandrayangutta</td><td>8.42</td></tr>
+ <tr><td>48</td><td>Aramghar ring road</td><td>8.50</td></tr>
+ <tr><td>48</td><td>Attapur</td><td>9.00</td></tr>
+ <tr><td>12</td><td>Uppal x roads</td><td>7.55AM</td></tr>
+ <tr><td>12</td><td>Survey of India</td><td>7.57</td></tr>
+ <tr><td>12</td><td>Habsiguda</td><td>8.00</td></tr>
+ <tr><td>12</td><td>Tarnaka x roads</td><td>8.03</td></tr>
+ <tr><td>12</td><td>Vidyanagar (SVES)</td><td>8.08</td></tr>
+ <tr><td>12</td><td>Nallakunta</td><td>8.13</td></tr>
+ <tr><td>12</td><td>Fever hospital</td><td>8.15</td></tr>
+ <tr><td>12</td><td>Barkatpura</td><td>8.17</td></tr>
+ <tr><td>12</td><td>Narayanguda</td><td>8.21</td></tr>
+ <tr><td>12</td><td>Himayath nagar</td><td>8.26</td></tr>
+ <tr><td>12</td><td>Lakdi ka pool</td><td>8.30</td></tr>
+ <tr><td>12</td><td>Masab Tank</td><td>8.33</td></tr>
+ <tr><td>12</td><td>NMDC</td><td>8.37</td></tr>
+ <tr><td>12</td><td>Mehdipatnam</td><td>8.40</td></tr>
+ <tr><td>12</td><td>Kakatiya Nagar</td><td>8.45</td></tr>
+
+
+</table>
+
+<script>
+function myFunction0() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput0");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}function myFunction1() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}function myFunction2() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[2];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+
+</script>
+
+</body>
+</html>
+

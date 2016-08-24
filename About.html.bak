@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+      #circles1{
+		align-content: left;
+        width:30%;
+		height:30%;
+		border-radius:50%;
+		font-size:50%;
+		color:#fff;
+		line-height:50%;
+		text-align:center;
+      }
+      #circles2{
+        align-content: left;
+        width:30%;
+		height:30%;	
+		border-radius:30%;
+		font-size:50%;
+		color:#fff;
+		line-height:50%;
+		text-align:center;
+
+      }
+
+		body
+		{
+			font-size: 3.5vmin;
+			background-repeat:repeat-y;
+			background-size:cover;
+			background-color: #c2c2d6;
+		}
+		#g{
+			font-size:3.5vmin;
+		}
+			</style>
+    </head>
+    <body >
+	<h1><a href="http://www.cbit.ac.in"><input type='image' align='left' src="11.png" height=auto width=9%></a></h1>
+	<h1><a href="http://www.cbit.ac.in"><input type='image' align='right' src="cosc.png" height=auto width=13%></a></h1>
+	<div id='g'><div id='f'><h1 align='center'>CBIT Mobile App<br/>(Version 1.0)</h1></div></div>	
+	</fieldset>
+	<hr><center>
+	<div id='g'><div id='f'><p align='center'>One of the present technical club in our college.<br/> CBIT Open Source Community(COSC) Club</div></div>
+
+<div><p><input type='image' align='center' src="coscdetails.png" height=auto width=95%></a></p></div>  
+ 
+<div>
+ <p>Contact: 9849272455&nbsp
+  E-Mail : <a href="mailto:cbitbus@yahoo.in">
+ cbitbus@yahoo.in </a></p>
+	<p >Developed By COSC Team&nbsp
+Powered By  Swecha</p>
+	<div class="container">  
+        <span class="button fb">  
+            <a href="http://www.facebook.com"><img src="facebook.png" height=auto width=5%></a>  
+        </span>  
+  
+        <span class="button twit">  
+            <a href="http://www.twitter.com"><img src="img/twitter_standing.png" alt="" height=auto width=5%></a>  
+        </span>  
+  
+        <span class="button mail">
+		<a href="http://www.gmail.com"><img src="img/mail.png" alt="" height=auto width=5%></a>
+	</span>  
+  	</div>
+  </div></center>
